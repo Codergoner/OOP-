@@ -6,5 +6,8 @@
     <Label text="Resources"/>
     <TextField fx:id="titleField" promptText="Title"/>
     <Button text="Upload" onAction="#uploadResource"/>
+    <ListView fx:id="resourcesList"/>
+    <Button text="Delete Selected" onAction="#deleteResource"/>
+    <Button text="Back" onAction="#backToDashboard"/>
   </children>
 </VBox>

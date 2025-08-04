@@ -6,5 +6,8 @@
     <Label text="Events"/>
     <TextField fx:id="titleField" promptText="Event Title"/>
     <Button text="Create" onAction="#createEvent"/>
+    <ListView fx:id="eventsList"/>
+    <Button text="Delete Selected" onAction="#deleteEvent"/>
+    <Button text="Back" onAction="#backToDashboard"/>
   </children>
 </VBox>

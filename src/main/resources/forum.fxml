@@ -5,5 +5,8 @@
   <children>
     <Label text="Forum"/>
     <Button text="New Thread" onAction="#newThread"/>
+    <ListView fx:id="threadsList"/>
+    <Button text="Delete Selected" onAction="#deleteThread"/>
+    <Button text="Back" onAction="#backToDashboard"/>
   </children>
 </VBox>

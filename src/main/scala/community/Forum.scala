@@ -14,6 +14,8 @@ class Forum {
     thread
   }
 
+  def removeThread(thread: Thread): Unit = threads -= thread
+
   def addPost(thread: Thread, author: User, content: String): Unit =
     thread.posts += Post(author, content)
 
