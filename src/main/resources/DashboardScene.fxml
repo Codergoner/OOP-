@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="community.controller.DashboardController">
+    <children>
+        <Label fx:id="welcomeLabel" text="Welcome" />
+        <Button fx:id="eventsButton" text="Events" onAction="#openEvents" />
+        <Button fx:id="forumButton" text="Forum" onAction="#openForum" />
+        <Button fx:id="resourcesButton" text="Resources" onAction="#openResources" />
+    </children>
+</VBox>
