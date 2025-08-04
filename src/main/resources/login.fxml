@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<AnchorPane prefWidth="300" prefHeight="200" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="community.LoginController">
+  <children>
+    <Label layoutX="20" layoutY="20" text="Email"/>
+    <TextField fx:id="emailField" layoutX="80" layoutY="20"/>
+    <Button layoutX="80" layoutY="60" text="Login" onAction="#handleLogin"/>
+  </children>
+</AnchorPane>

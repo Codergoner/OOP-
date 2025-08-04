@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<VBox prefWidth="400" prefHeight="300" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="community.ResourceController">
+  <children>
+    <Label text="Resources"/>
+    <TextField fx:id="titleField" promptText="Title"/>
+    <Button text="Upload" onAction="#uploadResource"/>
+  </children>
+</VBox>
