@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="community.controller.ForumController">
+    <children>
+        <TextField fx:id="threadField" promptText="Thread" />
+        <TextArea fx:id="contentArea" promptText="Content" />
+        <Button fx:id="postButton" text="Post" onAction="#addPost" />
+        <ListView fx:id="postList" />
+    </children>
+</VBox>
