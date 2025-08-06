@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.*?>
-<VBox prefWidth="400" prefHeight="300" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="community.DashboardController">
+<VBox fx:id="rootPane" prefWidth="400" prefHeight="300" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="community.DashboardController">
   <children>
     <Label text="Dashboard"/>
+    <Button text="Events" onAction="#goToEvents"/>
+    <Button text="Forum" onAction="#goToForum"/>
+    <Button text="Resources" onAction="#goToResources"/>
   </children>
 </VBox>
