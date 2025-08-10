@@ -9,11 +9,7 @@ import javafx.stage.Stage
 class LoginController {
   @FXML private var emailField: TextField = _
 
-  private val users: Map[String, User] = Map(
-    "farmer@example.com" -> new Farmer("Farmer Joe", "farmer@example.com"),
-    "volunteer@example.com" -> new Volunteer("Volunteer Bob", "volunteer@example.com"),
-    "leader@example.com" -> new CommunityLeader("Leader Alice", "leader@example.com")
-  )
+  private val users = UserRegistry.users
 
   @FXML
   def handleLogin(): Unit = {
@@ -28,5 +24,12 @@ class LoginController {
       case None =>
         println("Invalid user")
     }
+  }
+
+  @FXML
+  def handleShowSignup(): Unit = {
+    val stage = emailField.getScene.getWindow.asInstanceOf[Stage]
+    val root = FXMLLoader.load(getClass.getResource("/signup.fxml"))
+    stage.setScene(new Scene(root))
   }
 }

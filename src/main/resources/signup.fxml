@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<AnchorPane stylesheets="@styles.css" prefWidth="300" prefHeight="220" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="community.SignupController">
+  <children>
+    <Label layoutX="20" layoutY="20" text="Name"/>
+    <TextField fx:id="nameField" layoutX="80" layoutY="20"/>
+    <Label layoutX="20" layoutY="60" text="Email"/>
+    <TextField fx:id="emailField" layoutX="80" layoutY="60"/>
+    <Button layoutX="80" layoutY="100" text="Sign Up" onAction="#handleSignup"/>
+    <Button layoutX="150" layoutY="100" text="Back" onAction="#handleBack"/>
+  </children>
+</AnchorPane>

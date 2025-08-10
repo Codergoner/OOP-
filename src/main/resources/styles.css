@@ -1,0 +1,13 @@
+.root {
+  -fx-font-family: "Arial";
+}
+
+.button {
+  -fx-background-color: #4CAF50;
+  -fx-text-fill: white;
+}
+
+.text-field {
+  -fx-background-color: #f0f0f0;
+  -fx-border-color: #ccc;
+}
